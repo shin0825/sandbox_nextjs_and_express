@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+    # node1:
+    #     ports:
+    #         - 6682:8888
+    #     image: node:lts
+    #     container_name: node1
+    #     tty: true
+    #     volumes:
+    #         - ./app:/app
+    #     working_dir: "/app"
+    db1:
+        image: postgres
+        ports:
+            - "6434:5432"
+        restart: always
+        volumes:
+            - ./pgdata:/var/lib/postgresql/data
+        environment:
+            - POSTGRES_USER=postgres
+            - POSTGRES_PASSWORD=mysecretpassword1234
+            - PGPASSWORD=mysecretpassword1234
+            - POSTGRES_DB=testdb
+            - DATABASE_HOST=localhost

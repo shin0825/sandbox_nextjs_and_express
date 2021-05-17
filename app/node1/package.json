@@ -1,0 +1,24 @@
+{
+  "name": "node1",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next -p 6682",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "10.2.0",
+    "pg": "^8.6.0",
+    "pg-hstore": "^2.3.3",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "sequelize": "^6.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^15.0.2",
+    "@types/react": "^17.0.5",
+    "@types/react-dom": "^17.0.4",
+    "typescript": "^4.2.4"
+  }
+}
